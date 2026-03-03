@@ -91,7 +91,6 @@ public class CreateEmployeePage {
 		String empEmail = exutility.getDataFromExcel("emp", 1, 1);
 		String empPhone = exutility.getDataFromExcel("emp", 1, 2);
 		String empUN = empName;
-		
 		String empDesg = exutility.getDataFromExcel("emp", 1, 4);
 		String empExp = exutility.getDataFromExcel("emp", 1, 5);
 //		int empExpInt =Integer.parseInt(empDesg);
