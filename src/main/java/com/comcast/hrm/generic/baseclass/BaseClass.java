@@ -69,18 +69,18 @@ public class BaseClass {
 		lp.getSignInBtn().click();
 	}
 
-//	@AfterMethod
-//	public void logout() throws InterruptedException {
-//		CommonElements ce = new CommonElements(driver);
-//		WebDriverUtility wdUtility = new WebDriverUtility();
-//		wdUtility.waitForElementPresent(driver, ce.getLogoutBtn());
-//		ce.logoutApp(driver);
-//	}
-//
-//	@AfterClass
-//	public void closeBrowser() throws InterruptedException {
-//		driver.quit();
-//	}
+	@AfterMethod
+	public void logout() throws InterruptedException {
+		CommonElements ce = new CommonElements(driver);
+		WebDriverUtility wdUtility = new WebDriverUtility();
+		wdUtility.waitForElementPresent(driver, ce.getLogoutBtn());
+		ce.logoutApp(driver);
+	}
+
+	@AfterClass
+	public void closeBrowser() throws InterruptedException {
+		driver.quit();
+	}
 
 	@AfterSuite
 	public void closeDbConnection() {
