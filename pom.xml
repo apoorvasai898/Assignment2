@@ -48,11 +48,6 @@
 	    <version>9.5.0</version>
 	    <scope>compile</scope>
 	</dependency>
-	
-	<dependency>
-		<groupId>SeleniumCRMGUIFramework</groupId>
-		<artifactId>Maven123</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
-	</dependency>
+ 
   </dependencies>
 </project>

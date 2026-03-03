@@ -2,28 +2,28 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-03-03T12:33:03 IST" name="Default suite" finished-at="2026-03-03T12:33:17 IST" duration-ms="14203">
+  <suite started-at="2026-03-03T17:49:26 IST" name="Default suite" finished-at="2026-03-03T17:49:52 IST" duration-ms="25483">
     <groups>
     </groups>
-    <test started-at="2026-03-03T12:33:03 IST" name="Default test" finished-at="2026-03-03T12:33:17 IST" duration-ms="14203">
+    <test started-at="2026-03-03T17:49:26 IST" name="Default test" finished-at="2026-03-03T17:49:52 IST" duration-ms="25483">
       <class name="com.comcast.hrm.createproj.emp.asssignproj.CreateProjEmpAssignProToEmp">
-        <test-method is-config="true" signature="connectDatabse()[pri:0, instance:com.comcast.hrm.createproj.emp.asssignproj.CreateProjEmpAssignProToEmp@7a69b07]" started-at="2026-03-03T12:33:03 IST" name="connectDatabse" finished-at="2026-03-03T12:33:03 IST" duration-ms="13" status="PASS">
+        <test-method is-config="true" signature="connectDatabse()[pri:0, instance:com.comcast.hrm.createproj.emp.asssignproj.CreateProjEmpAssignProToEmp@50a638b5]" started-at="2026-03-03T17:49:26 IST" name="connectDatabse" finished-at="2026-03-03T17:49:26 IST" duration-ms="12" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- connectDatabse -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.comcast.hrm.createproj.emp.asssignproj.CreateProjEmpAssignProToEmp@7a69b07]" started-at="2026-03-03T12:33:03 IST" name="launchBrowser" finished-at="2026-03-03T12:33:09 IST" duration-ms="6151" status="PASS">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.comcast.hrm.createproj.emp.asssignproj.CreateProjEmpAssignProToEmp@50a638b5]" started-at="2026-03-03T17:49:26 IST" name="launchBrowser" finished-at="2026-03-03T17:49:39 IST" duration-ms="13081" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method is-config="true" signature="login()[pri:0, instance:com.comcast.hrm.createproj.emp.asssignproj.CreateProjEmpAssignProToEmp@7a69b07]" started-at="2026-03-03T12:33:09 IST" name="login" finished-at="2026-03-03T12:33:09 IST" duration-ms="486" status="PASS">
+        <test-method is-config="true" signature="login()[pri:0, instance:com.comcast.hrm.createproj.emp.asssignproj.CreateProjEmpAssignProToEmp@50a638b5]" started-at="2026-03-03T17:49:39 IST" name="login" finished-at="2026-03-03T17:49:40 IST" duration-ms="780" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="createProjAndEmp()[pri:0, instance:com.comcast.hrm.createproj.emp.asssignproj.CreateProjEmpAssignProToEmp@7a69b07]" started-at="2026-03-03T12:33:09 IST" name="createProjAndEmp" finished-at="2026-03-03T12:33:17 IST" duration-ms="7486" status="PASS">
+        <test-method signature="createProjAndEmp()[pri:0, instance:com.comcast.hrm.createproj.emp.asssignproj.CreateProjEmpAssignProToEmp@50a638b5]" started-at="2026-03-03T17:49:40 IST" name="createProjAndEmp" finished-at="2026-03-03T17:49:52 IST" duration-ms="11525" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createProjAndEmp -->
-        <test-method is-config="true" signature="closeDbConnection()[pri:0, instance:com.comcast.hrm.createproj.emp.asssignproj.CreateProjEmpAssignProToEmp@7a69b07]" started-at="2026-03-03T12:33:17 IST" name="closeDbConnection" finished-at="2026-03-03T12:33:17 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="closeDbConnection()[pri:0, instance:com.comcast.hrm.createproj.emp.asssignproj.CreateProjEmpAssignProToEmp@50a638b5]" started-at="2026-03-03T17:49:52 IST" name="closeDbConnection" finished-at="2026-03-03T17:49:52 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDbConnection -->
