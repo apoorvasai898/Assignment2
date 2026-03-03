@@ -86,6 +86,5 @@ public class BaseClass {
 	public void closeDbConnection() {
 		System.out.println("DB CONNECTIOn CLOSED");
 	}
-	
 
 }
