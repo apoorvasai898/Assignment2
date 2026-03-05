@@ -1,7 +1,13 @@
 package com.comcast.hrm.listener;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.Date;
 
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
 import org.testng.ISuite;
 import org.testng.ISuiteListener;
 import org.testng.ITestContext;
@@ -10,8 +16,10 @@ import org.testng.ITestResult;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
+
 import com.comcast.hrm.threadlocal.DriverManager;
 
 public class ListenerClassImplementation implements ISuiteListener, ITestListener {
@@ -39,6 +47,16 @@ public class ListenerClassImplementation implements ISuiteListener, ITestListene
 	public void onTestFailure(ITestResult result) {
 		// TODO Auto-generated method stub
 		ITestListener.super.onTestFailure(result);
+		String methodName = result.getMethod().getMethodName();
+
+//		WebDriver driver = DriverManager.getDriver();
+
+		TakesScreenshot ts = (TakesScreenshot)DriverManager.getDriver();
+		String base64 = ts.getScreenshotAs(OutputType.BASE64);
+
+		DriverManager.getTest().addScreenCaptureFromBase64String(base64, methodName);
+
+		DriverManager.getTest().log(Status.FAIL, methodName + " === FAILED ===");
 	}
 
 	@Override

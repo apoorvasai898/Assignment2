@@ -57,7 +57,7 @@ public class CreateProjectPage {
 		wdUtility.select(statusSelect, projStatus);
 		addProjectBtn.click();
 		CommonElements ce = new CommonElements(driver);
-		ce.verifyProjCtn(projStatus);
+		ce.verify(projStatus);
 		return updatedProjectname;
 	}
 	public String getFinalProjName()

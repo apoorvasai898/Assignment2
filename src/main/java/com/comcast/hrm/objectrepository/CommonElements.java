@@ -15,7 +15,7 @@ public class CommonElements {
 	@FindBy(xpath = "//div[contains(@class,'toast--success')]")
 	private WebElement createdPop;
 
-	@FindBy(xpath = "//div[contains(@class,'toast--success')]/descendant::div[@role='alert']")
+	@FindBy(xpath = "//div[contains(@class,'Toastify__toast--success')]")
 	private WebElement createdPopTextEl;
 
 	@FindBy(xpath="//button[@aria-label='close']")
@@ -41,12 +41,8 @@ public class CommonElements {
 		return closeDelPopupEl;
 	}
 
-	public boolean verifyProjCtn(String projName) throws InterruptedException {
-		
-		System.out.println(".........................");
-		System.out.println(projName);
-		System.out.println(createdPopTextEl.getText());
-		if (createdPopTextEl.isDisplayed()) {
+	public boolean verify(String projName) throws InterruptedException {
+		if (createdPopTextEl.isEnabled()) {
 			return true;
 		} else {
 			return false;

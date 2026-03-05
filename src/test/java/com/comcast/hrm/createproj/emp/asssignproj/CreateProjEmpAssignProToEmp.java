@@ -36,10 +36,9 @@ public class CreateProjEmpAssignProToEmp extends BaseClass {
 		String projectNameUpdated = crprojp.createProject(projectName, managerName, driver, projectStatus);
 
 		CommonElements ce = new CommonElements(driver);
-		boolean projCreated = ce.verifyProjCtn(projectNameUpdated);
+		boolean projCreated = ce.verify(projectNameUpdated);
 
-//		Assert.assertEquals(projCreated, false);
-		Thread.sleep(2000);
+		Assert.assertEquals(projCreated, true);
 		if(projCreated == true)
 		{
 			DriverManager.getTest().log(Status.PASS,"project is created");
@@ -49,13 +48,23 @@ public class CreateProjEmpAssignProToEmp extends BaseClass {
 		}
 
 		hp.getEmployeesLink().click();
-		
-		Thread.sleep(3000);
 
 		CreateEmployeePage cremp = new CreateEmployeePage(driver);
 		cremp.getCreateEmpLink().click();
 
 		cremp.CreateEmpAndAssignProject(driver);
+		
+		CommonElements ce1 = new CommonElements(driver);
+		boolean empCreated = ce1.verify(projectNameUpdated);
+
+		Assert.assertEquals(empCreated, true);
+		if(empCreated == true)
+		{
+			DriverManager.getTest().log(Status.PASS,"Employee is created");
+		}
+		else {
+			DriverManager.getTest().log(Status.FAIL, "Employee is not created");
+		}
 
 	}
 }
