@@ -31,6 +31,7 @@ public class BaseClass {
 	@BeforeSuite
 	public void connectDatabse() {
 		System.out.println("Connected to Dabtabase");
+		System.out.println("Execution");
 	}
 
 	@BeforeClass
