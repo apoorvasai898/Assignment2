@@ -6,7 +6,9 @@
       <class name="com.comcast.hrm.createproj.emp.asssignproj.CreateProjEmpAssignProToEmp">
         <methods>
           <include name="launchBrowser"/>
+          <include name="closeBrowser"/>
           <include name="connectDatabse"/>
+          <include name="logout"/>
           <include name="createProjAndEmp"/>
           <include name="login"/>
           <include name="closeDbConnection"/>

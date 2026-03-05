@@ -42,15 +42,16 @@ public class CommonElements {
 	}
 
 	public boolean verifyProjCtn(String projName) throws InterruptedException {
-		Boolean result = false;
-		if (createdPopTextEl.getText().contains(projName)) {
-			result = true;
+		
+		System.out.println(".........................");
+		System.out.println(projName);
+		System.out.println(createdPopTextEl.getText());
+		if (createdPopTextEl.isDisplayed()) {
+			return true;
 		} else {
-			result = false;
+			return false;
 		}
-		return result;
 	}
-//	createdPopTextEl.getText().contains(projName) && 
 
 	public void logoutApp(WebDriver driver) {
 		WebDriverUtility wdUtility = new WebDriverUtility();

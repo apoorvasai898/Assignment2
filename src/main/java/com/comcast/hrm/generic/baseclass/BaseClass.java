@@ -22,6 +22,7 @@ import com.comcast.hrm.generic.file.utility.FileUtility;
 import com.comcast.hrm.generic.webdriverutility.WebDriverUtility;
 import com.comcast.hrm.objectrepository.CommonElements;
 import com.comcast.hrm.objectrepository.LoginPage;
+import com.comcast.hrm.threadlocal.DriverManager;
 
 public class BaseClass {
 	public WebDriver driver = null;
@@ -56,6 +57,7 @@ public class BaseClass {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		driver.get(URL);
+		DriverManager.setDriver(driver);
 	}
 
 	@BeforeMethod
